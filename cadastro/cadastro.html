@@ -6,6 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/9bbaee9804.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     </head>
 
     <body>
@@ -58,15 +61,15 @@
                             <label for="">Nome completo</label>
                         </div>
                         <div class="inputlog">
-                            <input type="text" class="input1" minlength="11" maxlength="11" required/>
+                            <input type="text" class="input1"  id="cpf" required/>
                             <label for="">CPF</label>
                         </div>
                         <div class="inputlog">
-                            <input type="date" required/>
-                            <label id="data">Data de nascimento</label>
+                            <input type="text" class="input1" id="data" required/>
+                            <label>Data de nascimento</label>
                         </div>
                         <div class="inputlog">
-                            <input type="text" class="input1" required/>
+                            <input type="text" class="input1" id="telefone" required/>
                             <label for="">Telefone</label>
                         </div>
                         <div class="inputlog">
@@ -97,7 +100,15 @@
         </div>
 
 </footer>
-<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+
 <script src="../home/sidebar.js"></script>
+<script>
+    $(document).ready(()=>{
+        $("#cpf").mask("999.999.999-99");
+        $("#telefone").mask("(99)99999-9999")
+        $("#data").mask("99/99/9999")
+    })
+</script>
     </body>
 </html>

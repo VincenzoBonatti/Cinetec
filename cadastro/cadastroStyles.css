@@ -133,11 +133,7 @@ main {
 	padding-left: 10px;
 	z-index: -1;
 }
-#data{
-	scale: .8;
-	top: -15px;
-	font-family: Arial, Helvetica, sans-serif;
-}
+
 
 
 .input1:focus ~ label, .input1:valid ~ label{
