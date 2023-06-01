@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="compra.css">
+    <link rel="stylesheet" href="compracell.css">
     <script src="https://kit.fontawesome.com/9bbaee9804.js" crossorigin="anonymous"></script>
     <title>Cinetec</title>
 </head>
@@ -51,16 +52,22 @@
         <h2>Dungeons & Dragons<br>(14:00)</h2>
         </div>
         <div class="compracont">
-            
+            <div class="cinema_">
+                <div class="legenda">
+                    <h5>LEGENDA</h5>
+                    <div><img src="icon_cadeiras/assento_disp.png" alt=""><p>assento disponivel</p></div>
+                    <div><img src="icon_cadeiras/assento_livre.png" alt=""><p>assento selecionado</p></div>
+                    <div><img src="icon_cadeiras/assento_ocup.png" alt=""><p>assento ocupado</p></div>
+                </div>
                 <div class="cinema">
-                    <div class="sala" id="cadera">
-                    </div>
-            <div class="tela"> TELA </div> 
-        </div>
-        <div class="compra">
-                <button class="btn">COMPRAR</button>
+                    <div class="sala" id="cadera"></div>
+                    <div class="tela"> TELA </div> 
+                </div>
+            </div>
+            <div class="compra">
+                <button class="btn" id="compra">COMPRAR</button>
                 <div class="preco">
-                <h3>Preço: R$<p id="preco">0</p>,00</h3>
+                    <h3>Preço: R$<p id="preco">0</p>,00</h3>
                 </div>
             </div>
         </div>
