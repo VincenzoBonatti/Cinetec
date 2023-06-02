@@ -123,7 +123,9 @@ main {
 	font-family: Arial, Helvetica, sans-serif;
 	
 }
-
+#inputDatas::placeholder{
+	color: white;
+}
 #inputDatas[name="data"] {
 	display: flex;
 	padding-left: 1rem;
